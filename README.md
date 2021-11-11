@@ -6,8 +6,11 @@ Lot of love and tears.
 
 A couple of imprvements which are work in progress:
 > the yellow button's icon is not in the center
+> 
 > the feedback form is original and not a google form, using flask framework and SQL server to store responses
+> 
 > thinking of a way to save the notes
+> 
 > integrate a proper searcj option
 
 
