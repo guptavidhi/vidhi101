@@ -1,0 +1,557 @@
+    <!doctype html>
+    <html lang="en">
+    <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <!-- Bootstrap CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <!-- Icons used CSS -->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">   
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+      
+      <!-- Bootstrap JSS -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+      
+      
+      <title>Namastey! </title>
+      <link rel = "icon" href="images/Avatar_VG.png" 
+              type = "image/x-icon">
+    </head>
+    <body >
+
+      <section id="Sidebar">
+        <div class="sidenav" style="overflow: hidden;">
+          <a href="New_tab.html" class="new tooltip1" data-bs-toggle="tooltip" data-bs-placement="right" title="New tab for New notes!"><i class="far fa-copy"></i></a>
+          
+          <span data-bs-toggle="modal"  data-bs-target="#search">
+            
+            <a href="#search" class="new"  data-bs-toggle="tooltip" data-bs-placement="right" title="Searching for something?" ><i style="transform: rotateY(180deg);" class="zmdi zmdi-search zmdi-hc-lg"></i></a></span>
+            
+          <a target="_blank" href="https://github.com/guptavidhi" class="new" data-bs-toggle="tooltip" data-bs-placement="right" title="Click here to be redirected to my Github page."><i class="fas fa-code-branch"></i></a>
+          
+            <!-- <a href="#search" class="new tooltip1" data-bs-toggle="tooltip" data-bs-placement="right" title="Searching something?"><i style="transform: rotateY(180deg);" class="zmdi zmdi-search zmdi-hc-lg"></i></a> -->
+          <span data-bs-toggle="modal" style="position: absolute; top:calc(100% - 125px) " data-bs-target="#exampleModal">
+            <a href="#exampleModal" class="new"  data-bs-toggle="tooltip" data-bs-placement="right" title="Visitor note" ><i class="far fa-user-circle"></i></a></span>
+            
+          <a href="#welcome" class="new" style="position: absolute; bottom: 0; " data-bs-toggle="tooltip" data-bs-placement="right" title="All's set! Click to get to the top."><i class="fas fa-cog"></i></a>
+        </div>
+      
+      
+      <div class="modal fade" id="search" tabindex="-1" aria-labelledby="searchLabel" aria-hidden="true" >
+        <div class="modal-dialog" style="padding-top: 100px; margin-top: 30px;">
+          <div class="modal-content" style="background-color: rgba(207, 205, 50, 0.904);">
+            <!-- <div class="modal-header"> -->
+              <!-- <h5 class="modal-title" id="searchLabel">Hi User!</h5> -->
+              <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="position: fixed; right: 0; "></button> -->
+            <!-- </div> -->
+            <div class="modal-body" style="text-align: center;">
+             <div id="quote" style="font-style: italic; font-size: 35px; font-family: 'Cookie', cursive;"> As long as one keeps searching, <br>the answers will come.</div>
+             <div style="font-style: italic; font-size: 20px; font-family: 'Cookie', cursive;">
+               -Joan Baez
+             </div>
+            </div>
+            <div class="modal-footer">
+              <span data-bs-toggle="tooltip" data-bs-placement="top" title="You might be disappointed.">
+              <a target="_blank" href="https://www.google.com/">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Search further</button> </a></span>
+              <button type="button" style="align-items: center;" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Hi User!</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            You, dear visitor, are awesome! Leave a kind note (or any feedback, no pressure) by clicking on the button below. 
+          </div>
+          <div class="modal-footer">
+            <span data-bs-toggle="tooltip" data-bs-placement="top" title="Or any comment!">
+            <button type="button" class="btn btn-primary " data-bs-dismiss="modal" ><a style="color: white; text-decoration: none;" href="feedback.html">Feedback</a>  </button> </span>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+      <section id="main-navbar">
+        <nav id="target-nav" class="navbar navbar-expand-lg fixed-top" >
+          <!-- <div class="container-fluid"> -->
+            <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="welcome nav-link" aria-current="page" href="#welcome"><i  class="zmdi zmdi-format-align-left " style="font-size: 13px; color: #888C96; border: none;"></i> &nbsp Welcome &nbsp &nbsp</a>
+                <a class="about nav-link" href="#about"><i  class="zmdi zmdi-format-align-left " style="font-size: 12px; color: #888C96; border: none;"></i>  &nbsp This Page &nbsp &nbsp  </a>
+                <a class="skills nav-link" href="#skills"><i  class="zmdi zmdi-format-align-left " style="font-size: 12px; color: #888C96; border: none;"></i> &nbsp About Me &nbsp &nbsp </a>
+                <a class="education nav-link" href="#education"><i  class="zmdi zmdi-format-align-left " style="font-size: 12px; color: #888C96; border: none;"></i> &nbsp Experience &nbsp &nbsp </a>
+                <a class="gallery nav-link" href="#gallery" style="background-color: #10192C;"><i  class="zmdi zmdi-format-align-left " style="font-size: 12px; color: #888C96; border: none; "></i> &nbsp Interests &nbsp &nbsp </a>
+              </div>
+            </div>
+            <!-- </div> -->
+          </nav>
+        </section>
+        
+       
+      <script type="text/javascript">
+        
+     
+        if (!sessionStorage.alreadyClicked) {
+          $(window).on('load', function() {
+            $('#myModal').modal('show');
+            
+        });
+    sessionStorage.alreadyClicked = 1;
+
+
+}
+    </script>
+<div class="modal" tabindex="-1" id="myModal" style="width:auto; margin-left: 35%; margin-top: 5%;">
+  <div class="modal-dialog" >
+    <div class="modal-content" >
+      <div class="modal-header">
+        <h5 class="modal-title">Kind Request</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Please open this on a PC or Laptop web browser! Pretty please?</p>
+      </div>
+      <div class="modal-footer">
+        <button id="Alert_close" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+        <div class="content">
+          <div id="welcome" class="welcome1">
+            
+            <h1><strong>Hey there!<br> My name is Vidhi. <br>Welcome to my page.</strong></h1>
+            
+          </div> 
+          <div id="about" class="about1" style="padding-top: 70px; " >
+            <div class="container_1">
+            <h2 style="color: #ffffea; ">About this Page</h2>
+          <ul style="list-style-type:none; margin-left: 30px; margin-right: 40px; margin-top: 0px;">
+            <li>
+              <div class="module">
+                <div class="mod_title"> <h4>The Design &nbsp;</h4></div>
+                <div class="mod_detail">The whole page is built to emulate the <a target="_blank" href="https://code.visualstudio.com/" style="text-decoration: none; color: #FEFFE1;">Visual Studio Code's "Abyss" theme</a>  and the entire thing is made from scratch. The symbols and icons used throughout the page are from <a target="_blank" href="https://fontawesome.com/" style="text-decoration: none; color: #FEFFE1; font-style: oblique .5deg;">FontAwesome</a> and <a target="_blank"href="https://zavoloklom.github.io/material-design-iconic-font/icons.html" style="text-decoration: none; color: #FEFFE1; font-style: oblique .5deg;">Material Design Iconic Font</a>. <br>&nbsp; 
+                  <!-- <hr class="nod_hr" style="border-image: 
+
+                  linear-gradient(
+                    to right, 
+                    rgb(253, 82, 2), rgb(253, 241, 132)  ) 100% 1;
+              "> -->
+              </div></div>
+            </li>
+            <li>
+              <div class="module">
+                <div class="mod_title"> <h4>The Build</h4></div>
+                <div class="mod_detail">The technology used is simple HTML, CSS and JavaScript along with Bootstrap framework.<br>
+                  It's hosted by AWS EC2 with Amazon Route 53 as the DNS.<br>
+                   The domain name is registered at Namecheap.<br>
+                  It's also created with a lot of sweat and tears and sleepless nights. <br>&nbsp; 
+              </div></div>
+              
+              <div class="module">
+                <div class="mod_title"> <h4>The Intention</h4></div>
+                <div class="mod_detail" style="border-bottom: none;"> This page can be treated as a Creative CV or a personal blog of sorts but please don't use it as either. It is truly just a motivation to learn some Web Development.<br>&nbsp;  
+              </div></div>
+            </li>
+          </ul>
+              </div>
+              </div>
+                
+          
+          
+          <div id="skills" class="about1 aboutme" style="padding-top: 70px;" >
+              <div class="container_1" style="background-color: #011e3f;">
+              <h2 style="color: rgb(253, 245, 228);">About Me</h2>
+              <div class="aboutme_intro" style="margin-top: 20px;">
+              <p>
+                I'm a Data analyst with a knack for problem solving.
+                <br> I'm highly interested in Computers and electronics or any piece of technology. 
+                <!-- <br> I'm just a girl, standing in front of a machinery, asking permission to open it up. -->
+                
+                <br>&nbsp;
+              </p>
+            </div>
+            
+              <div class="row">
+                <div class="col-md-4">
+                  <h3 style="color: rgb(252, 181, 4);">Details</h3>
+                  <p style="line-height: 1.95;">
+                    <strong>Name:</strong>
+                    Vidhi Gupta<br />
+                    <strong>Age:</strong>
+                    25 years<br />
+                    <strong>Location:</strong>
+                    Jaipur, India, Earth		<br>
+                    <i class="fas fa-envelope"></i> gupta_vidhi@outlook.com
+                    <a target="_blank" href="https://www.linkedin.com/in/vidhi-gupta-15768a128/" style=" color: #EDEEE9; "><i  class="fab fa-linkedin"> <span style="text-decoration: underline; text-underline-offset: 1px;text-decoration-thickness: 1px;">Connect with me!</span> </i></a><br>
+                  </p>
+                  <h3 style="color: rgb(252, 181, 4);"> Languages</h3>
+                <p style="line-height: 1.95;">
+                  <!-- <ul style="list-style-type:none;"> -->
+                      English <br>
+                      <!-- </div> -->
+                      Hindi <br>
+                        <!-- HTML, CSS & JS <br>
+                        Python <br>
+                        LabVIEW -->
+                    </p>
+
+
+                    <!-- <a href="mailto: gupta_vidhi@outlook.com"><i class="fas fa-envelope"></i>send mail</a> -->
+                    <!-- <a href="https://twitter.com/pascalvgemert" class="twitter-follow-button" data-show-count="false" data-size="large" data-show-screen-name="false">Follow @pascalvgemert</a>
+                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script> -->
+                  </div>
+                  <div class="col-md-4 text-center">
+                    <img src="images/DP_Option_2.JPG"   width="246" height="246" style="border-radius: 50%;" />
+                  </div>
+                  
+
+                <div class="col-md-4 aboutme" style="line-height: 1.7;">
+                  <h3 style="color: rgb(252, 181, 4);"> Skills</h3>
+                  <p>
+                    <!-- <ul style="list-style-type:none;"> -->
+                      Web Development <br> Data Analytics <br>
+                        <!-- </div> -->
+                        Fraud Analytics <br>
+                        
+                        Virtual Instrumentation <br>
+                        <!-- US Healthcare <br> -->
+                        &nbsp;
+                      </p>
+                  
+                  <h3 style="color: rgb(252, 181, 4);"> Technologies</h3>
+                <p>
+                  <!-- <ul style="list-style-type:none;"> -->
+                      SAS Enterprise Guide <br>
+                      <!-- </div> -->
+                      SQL <br>
+                        HTML, CSS & JS <br>
+                        Python <br>
+                        LabVIEW
+                    </p>
+                </div>
+                
+                </div>
+              </div>
+              </div>
+              <!-- </div> -->
+              <!-- <div class="scrollspy" id="skills"> -->
+                
+                <div id="education" class="skills1" style="padding-top: 70px";>
+                  <div class="container_1">
+                  <h2 style="color: #EDEEEA;">Work experience</h2>
+
+        
+    <div class="Line-container">                       
+    <table>
+      <style>
+        .bullet{
+          margin-top: 18px;
+          color: #20e07a;
+        }
+        .company-name{
+          margin-left: 10px;
+          margin-top: 15px;
+          color: #20e07a;
+          font-weight:bolder;
+          font-size: 20px;
+          font-family: century;
+          vertical-align: text-top;
+          text-decoration: none;
+          /* vertical-align: text-bottom; */
+        }
+        .duration{
+          vertical-align: text-top;
+          margin-left: 10px;
+          margin-top: -10px;
+          /* padding-top: -50px; */
+          color: #4de293;
+          /* font-weight: ; */
+        }
+
+        .designation{
+          margin-top: 10px;
+          color: #6ae9a5;
+          font-size: large;
+        }
+      </style>
+      <thead>
+        <col style="width:4%">
+        <col style="width:2%">
+      <col style="width:45%">
+      <col style="width: 70%">
+        <!-- <col style="width:38%"> -->
+        </thead>
+      <tr>
+        <td></td>
+          <td><i class="fas fa-dot-circle fa-sm bullet"></i></td>
+        <td><a target="_blank" href="https://home.barclays/" style="text-decoration: none;"><div class="company-name">Barclays</div></a></td>
+        <td><div class="designation">Snr Fraud Analyst</div></td>
+      </tr>
+      <tr>
+        <td></td>
+          <td></td>
+        <td><div class="duration" style="margin-top: -10PX;">Feb 2021 - Present</div></td>
+        <td><div class="description"> Working on third party Application fraud analytics</div></td>
+      </tr>
+      
+      <!-- <br><div class="duration">test</div> -->
+      <!-- <br><div class="description">Working on third party Application fraud analytics</div> -->
+      <tr>
+        <td></td>
+          <td><i class="fas fa-dot-circle fa-sm bullet"></i></td>
+        <td><a target="_blank" href="https://www.exlservice.com/" style="text-decoration: none;"><div class="company-name">EXL Services</div></a></td>
+        <td><div class="designation">Business Analyst</div></td>
+      </tr>
+      <tr>
+        <td></td>
+          <td></td>
+        <td><div class="duration">Sep 2018 - Jan 2021</div></td>
+        <td><div class="description"> Working in US Healthcare industry as part of Quality Management team.</div></td>
+      </tr>
+      
+      <tr>
+        <td></td>
+          <td><i class="fas fa-dot-circle fa-sm bullet"></i></td>
+        <td><a target="_blank" href="https://iisc.ac.in/" style="text-decoration: none;"><div class="company-name" style="font-size: large;">Indian Institute of Science</div></a></td>
+        <td><div class="designation">Instrumentation Intern</div></td>
+      </tr>
+      <tr>
+        <td></td>
+          <td></td>
+        <td><div class="duration">Jun 2017 - Jul 2017</div></td>
+        <td><div class="description">Worked on a project focussed on generating energy from SCO-2</div></td>
+      </tr>
+      <tr>
+        <td></td>
+          <td><i class="fas fa-dot-circle fa-sm bullet"></i></td>
+        <td><a target="_blank" href="https://www.rvce.edu.in/" style="text-decoration: none;"><div class="company-name" style="font-size: large;">RV College of Engineering</div></a></td>
+        <td><div class="designation"> Student</div></td>
+      </tr>
+      <tr>
+        <td></td>
+          <td></td>
+        <td><div class="duration">Aug 2014 - Jul 2018</div></td>
+        <td><div class="description"> Undergraduate student in Electronics and Instrumentation department. </div></td>
+      </tr>
+    </table>
+    <p style="margin-top: 40px; font-size: large; color: #d0ecde;">Find more details in the CV attached <a target="_blank" href="Vidhi_Gupta_Resume.pdf" style="color: #EDEEE9; text-decoration-thickness: 1px; text-underline-offset: 1px; ">here</a>.</p></div>
+
+                        </div>
+                </div>
+                
+                        </div>
+                <!-- </div> -->
+                              <!-- </div> -->
+                              
+                              <div id="gallery" class="gallery1" style="padding-top: 80px; background-position: left;">
+                                <button id="yellow_button" type="button" class="menu-button js-menu-trigger" aria-label="Click to open menu"></button>
+                                <div class="pen-title js-menu-trigger">
+                                  <h1>"Life is like a Jigsaw puzzle. Everything you love is a piece which when joined together forms the complete picture." <br>&nbsp<br> -Daniel Sloss</h1>
+                                  <div class="info">Click here</div>
+                                </div>
+                                
+                                <div class="menu js-menu" style="padding-top: 35px; ">
+                                  <div class="menu__item" >
+                                    <div class="menu__item__bg-container"></div>
+                                    <input type="checkbox" id="card1" class="more" aria-hidden="true">
+
+                                    <div class="flipcard menu__item__content " style="color: white;">
+                                    <div class="menu__item__content_front" >
+                                      "Minor achievements, Major smiles."<div class="vg" style="font-size: 20px;"> -Yours Truly </div> <br>
+                                        <label for="card1" class="button123" aria-hidden="true" style="font-size: 12px;">
+                                          Know More
+                                      </label>
+                                      </div>
+                                      <div class="menu__item__content_back">
+                                       <div style="font-size: large;"> Some joyous memories.. </div>
+                                       <div style="font-size: 15px;"> <p><br>Working in an industry level laboratory.
+                                        <br>Winning a mono-acting competition.
+                                      <br>Becoming the School Head girl.
+                                      <br>Shining star award in the first year of job.
+                                    <br>Having the best family & friends!</p></div>
+                                        <label for="card1" class="button123 return" aria-hidden="true" >
+                                            <i style="padding-top: -10px;" class="fas fa-arrow-left"></i>
+                                        </label>
+                                        </div>                                    
+                                      </div>
+                                  </div>
+                                  <div class="menu__item">
+                                    <div class="menu__item__bg-container"></div>
+                                    <input type="checkbox" id="card2" class="more" aria-hidden="true">
+
+                                    <div class="flipcard menu__item__content ">
+                                    <div class="menu__item__content_front">
+                                      "I'm sort of a student of Comedy.<div class="ms" style="font-size: 14px; display: inline;"> -Michael Scott</div>"<div class="vg" style="font-size: 20px;"> - Vidhi Gupta </div> <br>
+                                        <label for="card2" class="button123" aria-hidden="true" style="font-size: 12px;">
+                                          Know More
+                                      </label>
+                                      </div>
+                                      <div class="menu__item__content_back">
+                                        <img src="https://lh3.googleusercontent.com/pw/AM-JKLWBL1nMiCGaGoboxvnhVSmO28OWX1pEYV6vmj8fXWprmj9qJkIfJqjDGgTuV-ynKi210XDSDyiYeqyJ5cj-wpI1aYfszkILwK45N0NglxgmjzzrLSRIs_mDtCsaZdW-3z4GDUq_sF5wyCxdzONdkHZcLQ=w1439-h972-no?authuser=0" alt="images/Standup_VG.jpg" width="206" height="206" style="border-radius: 50%; margin-top: -70px; padding-top: -100px;">
+                                        <p>I like to make people laugh!<br>I've tried three open mics, bombed in only two so far. So yes, I'm going strong!</p>
+                                        <label for="card2" class="button123 return" aria-hidden="true" >
+                                            <i style="padding-top: -10px;" class="fas fa-arrow-left"></i>
+                                        </label>
+                                        </div>                                    
+                                      </div>
+                                  </div>
+                                  <!-- <div class="menu__item">
+                                    <div class="menu__item__bg-container"></div>
+                                    <div class="menu__item__content">
+                                      <nav class="main-navigation">
+                                        <a class="main-navigation__link" href="#">Lorem, ipsum.</a>
+                                        <a class="main-navigation__link" href="#">Ipsum dolor.</a>
+                                        <a class="main-navigation__link" href="#">amet consectetur.</a>
+                                        <a class="main-navigation__link" href="#">voluptate provident</a>
+                                      </nav>
+                                    </div>
+                                  </div> -->
+                                  <div class="menu__item">
+                                    <div class="menu__item__bg-container"></div>
+                                    <input type="checkbox" id="card3" class="more" aria-hidden="true">
+
+                                    <div class="flipcard menu__item__content " style="color: white;">
+                                    <div class="menu__item__content_front">
+                                      "The cure for boredom is Curiosity.<br>There is no cure for Curiosity."<div class="vg" style="font-size: 20px;"> - Dorothy Parker </div> <br>
+                                     
+                                        <label for="card3" class="button123" aria-hidden="true" style="font-size: 12px;">
+                                          Know More
+                                      </label>
+                                      </div>
+                                      <div class="menu__item__content_back" style="margin-top: -250px; margin-left: 20px; margin-right: 30px; padding-right: 50px;">
+                                        <img src="images/bulb.gif" alt="Computer man" style="width:88px;height:88px;">
+                                        <P>Being curious has not been good for my mother's health.<br>
+                                        I've accidently ruined perfectly good electronics with the optimism of putting it back together.<br> (RIP to all the radios sacrificed for my magnet collection) <br> &nbsp;<br>
+                                        Following are some personal projects undertaken:
+                                      </P>
+                                        <ul style="text-align: left;">
+                                          <li>Learning Web Development (2021)</li>
+                                          <li>Transferring Youtube playlist to Spotify (2020)</li>
+                                          <li>Learning novice Image processing and ML (2017-18) </li>
+                                          <li>Creating mock traffic light control with MC8051 (2016) </li>
+                                          <li>Making a Line follower robot with arduino (2015)</li>
+                                          <li>Making a speaker from scraps (2015)</li>
+                                          <li>Motor, generator, Maglev trains etc. </li>
+                                        </ul>
+                                        <!-- <img src="images/Standup_VG.jpg" alt="" width="206" height="206" style="border-radius: 50%; margin-top: -70px; padding-top: -100px;"> -->
+                                        <!-- <p>I like to make people laugh!<br>I've tried three open mics, bombed in only two so far. So yes, I'm going strong!</p> -->
+                                        <label for="card3" class="button123 return" aria-hidden="true" >
+                                            <i style="padding-top: -10px;" class="fas fa-arrow-left"></i>
+                                        </label>
+                                        </div>                                    
+                                      </div>
+
+                                  </div>
+
+
+
+
+                                  <div class="menu__item">
+                                    <div class="menu__item__bg-container"></div>
+                                    <input type="checkbox" id="card4" class="more" aria-hidden="true">
+
+                                    <div class="flipcard menu__item__content " style="color: rgb(255, 255, 255);">
+                                    <div class="menu__item__content_front" style="margin-top: -100px;">
+                                      "All the world's a stage and all the men and women are merely players."<div class="vg" style="font-size: 20px;"> - Shakespeare </div> <br>
+                                        <label for="card4" class="button123" aria-hidden="true" style="font-size: 12px;">
+                                          Know More
+                                      </label>
+                                      </div>
+                                      <div class="menu__item__content_back" style="margin-top: -200px; padding-top:0; padding-bottom:-30px">
+                                        <style>
+                                          .cust_row{
+                                            display: flex;
+                                            margin-right: 20px;
+                                            margin-left: 20px;
+                                          }
+                                          .cust_class{
+                                            flex: 25%;
+                                            padding: 1px
+                                          }
+                                        </style>
+                                        <!-- <div class="menu__item__bg-container_back">HI</div> -->
+                                        <!-- <img src="images/IMG-20180311-WA0010.jpg" alt="" width="30%" height="20%" style=" margin-top: -70px; padding-top: -100px;">
+                                        <p>I like to make people laugh!<br>I've tried three open mics, bombed in only two so far. So yes, I'm going strong!</p> -->
+                                        <div class="cust_row">
+                                          <div class="cust_class">
+                                            <img src="https://lh3.googleusercontent.com/pw/AM-JKLWlp5L5nq8GzGVmShdb9RASqbiUE8LCWb7hiZrHMHWbGS2ML-l1cZJ43MPSZs4-gO_kHL_4OD4k5N1_7F9s98Fcx2mL-1zo1-Q6h2aAL-1in_PUIrHP7k0mdultHFHl22VQVx6whF-26SAZt-GfHbY5Gw=w719-h499-no?authuser=0" alt="images/sarhad_solo1.jpg" width="85%" height="100px" style="border-radius:5%;margin-left: auto; margin-right: auto;">
+                                          </div>
+                                          <div class="cust_class">
+                                            <img src="https://lh3.googleusercontent.com/pw/AM-JKLUz4pzmHqbCy1hx-gyink0Rh-qD1Ibee-wTXuTCdt7-uNw0P0U2xrqSu5_OtCize34D6uUMHEeZE0ZEBx7UUxmMAmJAeSpqdbiRmlRI9RslQQqMBMbsAP1pPrRqZghAq29HMEKu4NTtQaO0lX_Agatspw=w672-h487-no?authuser=0" alt="images/inshallah_ram.jpg" width="85%" height="100px" style=" border-radius:5%; opacity: 1; margin-left: auto; margin-right: auto;">
+                                          </div>
+                                          <div class="cust_class">
+                                            <img src="images/amma_photo_ticket.jpg" alt="" width="85%" height="100px" style="border-radius:5%; opacity: 1;margin-left: auto; margin-right: auto;">
+                                          </div>
+                                          <div class="cust_class">
+                                            <img src="https://lh3.googleusercontent.com/pw/AM-JKLX_mX1zmZiCpPfTKt_nJNaQtdXqN7Gv3gmcnAS63Y8sSjdyOf-Ad6PFtiHxu2kuquOUiSOOQOjWzGsAXDvlfyfJoKQkrShs7C2K34fXAKfLa3FDAiNMncVPSy8AkaGoOwiSQVedxdnQlgv8l6yggbDh1A=w1226-h972-no?authuser=0" alt="images\childright_solo1.jpg" width="85%" height="100px" style="border-radius:5%; opacity: 1;margin-left: auto; margin-right: auto;">
+                                          </div>
+                                        </div>
+                                        <p>
+                                          <!-- I believe there's life in every story, every storyteller and every actor who tries to live it.<br> -->
+                                          I believe a person can live a lot of lives through stories.<br> 
+                                          Theatre has the magic to transport one to a different era, a different story, a different feeling, a different perspective.<br>
+                                          I've been lucky to be a part of a number of stage acts and street plays over the years.</p>
+
+
+
+                                        <label for="card4" class="button123 return" aria-hidden="true" >
+                                            <i style="padding-top: -50px; margin-top: -50px;" class="fas fa-arrow-left"></i>
+                                        </label>
+                                        </div>                                    
+                                      </div>
+                                  </div>
+                                  
+                                  </div>
+                                </div>
+                                
+                                            </div>
+                                      </div>
+                              
+                                        </div>
+                                        
+                                        <section id="footer">
+
+                                          <div class="footer"> 
+                                            <h3>Thanks a lot if you made it till here! <br>You are truly awesome <i class="far fa-smile-wink"></i></h3>
+                                            <p style="font-size: small;">Want to leave a feedback? <a style="text-decoration: none;" href="feedback.html">Click here!</a> </p>
+                                            
+                                            <p >
+                                              All efforts done here are kind of original. Please fear the wrath of God before copying. <br>
+                                              Huge thanks to the unsung heroes who post their amazing themes and designs online for us novice developers. <br>
+                                              
+                                              Special mention to Simon Patrat for the Grid design right above this note.<br>
+                                              Special appreciation for Tim Berners-Lee for creating the Web! It wouldn't have been possible without him. <br>   
+                                            
+                                            </p>
+                                          
+                                            <h4>Peace <i class="fas fa-hand-peace"></i></h4>
+                                          </div>
+                                        </section>
+                                      
+                                      <script type="text/javascript" src="main.js">
+                            
+                                      </script>
+                                    </body>
+                                    </html>
